@@ -4,7 +4,6 @@ export default function useJsonFetch(url, opts) {
   const [data, setData] = useState("");
   const [isLoading, setLoading] = useState(true);
   const [hasError, setError] = useState(null);
-  // const timestampRef = useRef()
 
   useEffect(() => {
     setLoading(true);
