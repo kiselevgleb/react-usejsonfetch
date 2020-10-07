@@ -1,16 +1,13 @@
 import React from 'react';
-import useJsonFetch from './useJsonFetch';
 import './App.css';
 import Data from './Data';
-import Error from './Error';
-import Load from './Load';
 
 function App() {
   return (
     <div className="App">
-      <Data/>
-      <Error/>
-      <Load/>
+      <Data url={"http://localhost:7070/data"}/>
+      <Data url={"http://localhost:7070/error"}/>
+      <Data url={"http://localhost:7070/loading"}/>
     </div>
   );
 }

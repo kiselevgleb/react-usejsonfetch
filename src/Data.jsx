@@ -1,11 +1,10 @@
 import React from 'react';
 import useJsonFetch from './useJsonFetch';
 
-function Data() {
-  const [{ data, isLoading, hasError }] = useJsonFetch(
-    "http://localhost:7070/data"
+function Data(props) {
+  const [data, isLoading, hasError] = useJsonFetch(
+    props.url
   );
-
   return (
     <div className="App">
       <p>{data}</p>
